@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b83e20f78e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card__img">
+            <img src="Kong.jpg" alt="">
+        </div>
+        <h2>Thành Công</h2>
+        <div class="card__social">
+            <a href="https://www.facebook.com/profile.php?id=100007636869566">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCjUZltBBF78Id-3NDUkGeyg">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@kongtt.102">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Kongtt102">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <button id="btn" type="submit" onclick="show()">Contact Me</button>
+    </div>
+
+    <div id="card_2">
+        <div class="card__img">
+            <img src="Kong.jpg" alt="">
+        </div>
+        <h2>Trần Thành Công</h2>
+        <div class="msv">
+            Mã sinh viên: B20DCVT051
+        </div>
+        <div class="truong">
+            Trường: Học viện công nghệ bưu chính viễn thông
+        </div>
+        <div class="sdt">
+            Số điện thoại: 0987563307
+        </div>
+    </div>
+    <script>
+        var card2= document.getElementById("card_2");
+        function show() {
+            card2.style.visibility = 'visible';
+        }
+    </script>
+</body>
+</html>
