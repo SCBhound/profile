@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 :root{
     --primary-color:#f2726a;
@@ -14,10 +14,10 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins"; 
+    /* font-family: "Poppins";  */
     color:white;
 }
-.card{
+.card, #card_2{
     background: #242628;
     width: 300px;
     height: 400px;
@@ -25,13 +25,15 @@ body{
     text-align: center;
     overflow: hidden;
 }
-img{
+
+
+.card img{
     object-fit: cover;
     width: 100%;
     height: 100%;
     object-position: center;
 }  
-.card__img{
+.card .card__img{
     width: 120px;
     height: 120px;
     border: 4px solid var(--primary-color);
@@ -71,10 +73,63 @@ img{
     background: #f2726a;
 }
 
-.card__img:hover{
+.card .card__img:hover{
     width:100%;
     height: 100%;
     border-radius: unset; 
     transform: unset;
     border: none;
+}
+#card_2{
+    margin-left: 200px;
+    width: 500px;
+    visibility: hidden;
+}
+
+#card_2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: left;
+}
+
+#card_2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: left;
+}  
+#card_2 .card__img{
+    width: 120px;
+    height: 120px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translate(-120px,25px);
+    transition: 0.5s;
+}
+
+#card_2 h2{
+    margin-top: 35px;
+    transform: translate(-120px,25px);
+}
+
+.msv{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    transform: translate(-95px,25px);
+}
+.truong{
+    font-size: 20px;
+    color: white;
+    transform: translate(-10px,25px);
+    margin: 20px 0;
+}
+
+.sdt{
+    font-size: 20px;
+    color: white;
+    transform: translate(-105px,25px);
 }
