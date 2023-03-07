@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Raleway', sans-serif;
+}
+
+.container{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: url(photo.jpeg);
+  background-size:cover;
+}
+
+.content{
+  margin:10px;
+  width:300px;
+  height:400px;
+  background: rgba(257, 257, 257, 0.4);
+  backdrop-filter: blur( 1.9px );
+  border-radius: 10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  
+}
+
+figure{
+  max-width:100%;
+  display:block;
+  text-align:center;
+  padding:10px;
+
+  
+}
+figure .im{
+  width: 80px;
+  height:80px;
+  border-radius:50%;
+  object-fit: cover;
+  object-position:center;
+
+}
+
+figure::before{
+  content:'';
+  width:20px;
+  height:20px;
+  border: 2px solid orangered; 
+  border-radius:50%;
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+figure::after{
+  content:'';
+  width:20px;
+  height:20px;
+  border-radius:8px;
+  border: 2px solid orange; 
+  position:absolute;
+  top:20px;
+  right:20px;
+}
+header{
+  width:100%;
+  text-align:center;
+}
+
+header h1{
+  padding:10px;
+  font-size:23px;
+  letter-spacing:0.1em;
+  font-weight:500;
+}
+header p{
+  font-size:16px;
+  padding:5px 10px;
+  
+}
+
+.bootom{
+  width:100%;
+  height:auto;
+  padding:20px 10px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.card{
+  display:flex;
+  gap:5px;
+  border-radius: 80px;
+}
+.card span {
+  width: 80px;
+  line-height: 80px;
+  display: inline-block;
+  font-weight: 70;
+  text-transform: uppercase;
+  position: absolute;
+  left: 42%;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.card nav {
+  font-size: 0;
+}
+.card a {
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(180deg, #aea7da, #616dd4);
+  color: #ffffff;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.card a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+.card a:nth-child(1):hover {
+  background-color: #ea4335;
+}
+.card a:nth-child(2):hover {
+  background-color: #050608;
+}
+.card a:nth-child(3):hover {
+  background-color: #dd4ec5;
+}
+.card a:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+.card a:nth-child(4):hover {
+  background-color: #000000;
+}
+.card:hover span, .share.hover span {
+  opacity: 0;
+}
+.card:hover a{
+  margin: 0 10px;
+  color: #413838;
+  font-size: 28px;
+  border-radius: 50%;
+  background-color: #ffffff15;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);;
+  -webkit-backdrop-filter: blur(2px);;
+}
+.card:hover a:hover {
+  color: #fff
+}
+.foo{
+  display:flex;
+  gap: 10px;
+  width:100%;
+  padding:20px 0px;
+}
+.foo a:nth-child(2){
+  border:1px solid orangered;
+  background: none;
+  color: #000;
+}
+.foo a{
+  width: 100%;
+  border-radius:5px;
+  padding:7px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  background: #000;
+  font-size:14px;
+  border: 1px solid #000;
+}
+
+.card div svg{
+  width:20px;
+}
